@@ -1,0 +1,482 @@
+@import url(./utilities.css);
+
+/* .......................... Navbar .......................... */
+.logo-elegant {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.logo-elegant .blood {
+    color: #b30000;
+}
+
+.navbar,
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.logo img {
+    width: 17rem;
+}
+
+.nav-items li {
+    margin-left: 4rem;
+}
+
+.nav-items li a {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.nav-items li a:hover {
+    color: var(--bg-red);
+    transition: all .2s;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn:hover {
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+    color: var(--bg-red);
+    transition: all .2s;
+}
+
+.sign-up-btn:hover {
+    border: 2px solid var(--bg-white);
+    background-color: var(--bg-red);
+    color: var(--bg-white);
+    transition: all .2s;
+}
+
+/* .......................... Appointment .......................... */
+
+.appointment {
+    position: absolute;
+    top: 86%;
+    left: 88%;
+    position: fixed;
+    z-index: 995;
+}
+
+.appointment-circle {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid var(--bg-white);
+    background-color: var(--bg-red);
+    z-index: 999;
+}
+
+.appointment-circle span {
+    font-size: 3rem;
+    font-weight: 700;
+    position: absolute;
+    padding: 1.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--bg-white);
+    cursor: pointer;
+}
+
+.appointment-text {
+    height: 4rem;
+    width: 0rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: .8rem 0 0 1.5rem;
+    font-weight: 600;
+    border-radius: 3rem 0 0 3rem;
+    background-color: var(--bg-red);
+    border: 2px solid var(--bg-white);
+    color: var(--bg-white);
+    position: absolute;
+    top: 21%;
+    right: 52%;
+}
+
+.appointment-text p {
+    display: none;
+}
+
+.appointment-circle:hover {
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+}
+
+.appointment-circle:hover span {
+    color: var(--bg-red);
+}
+
+.appointment:hover .appointment-text {
+    width: 23rem;
+    transition: all ease-in .2s;
+}
+
+.appointment:hover .appointment-text p {
+    display: block;
+    transition: all ease-in 1s;
+}
+
+/* .......................... Showcase .......................... */
+
+.showcase-bg {
+    height: 80vh;
+}
+
+.bg-image img {
+    width: 75rem;
+    float: right;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    position: relative;
+}
+
+.search-box {
+    height: 5rem;
+    width: 65rem;
+    border: 1px solid var(--text-black);
+    border-radius: 5rem;
+    padding: 0 3rem 0 3rem;
+    position: absolute;
+    overflow: hidden;
+    font-size: 1.5rem;
+    top: 67%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 26px -13px;
+}
+
+.form-1 button.comp-btn {
+    outline: hidden;
+    color: var(--text-gray);
+    border: 0;
+    background: transparent;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 67%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+}
+
+.form-1 button.comp-btn:hover {
+    color: var(--text-black);
+}
+
+.form-1 button.mob-btn {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bd-info-wrap {
+    padding-top: 19rem;
+}
+
+.bd-info-head {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bd-info-text {
+    width: 40%;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+}
+
+.know-more-btn button {
+    margin-top: 2rem;
+}
+
+.know-more-btn button:hover {
+    border: 2px solid var(--bg-red);
+    background-color: var(--bg-white);
+    color: var(--bg-red);
+    transition: all .2s;
+}
+
+/* .......................... Blog .......................... */
+
+.blog-wrap {
+    height: 100vh;
+}
+
+.blog-head {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+}
+
+.box-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-wrap .box img {
+    width: 35rem;
+    height: auto;
+}
+
+.box {
+    position: relative;
+    width: 35rem;
+    height: 55rem;
+}
+
+.box-head {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.box-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+
+.box-link-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-bottom: 2px solid var(--bg-red);
+}
+
+.box-btn {
+    position: relative;
+    height: 5rem;
+    color: var(--bg-red);
+}
+
+.box-btn span {
+    position: absolute;
+    top: 50%;
+    font-weight: 600;
+    transform: translate(0, -50%);
+}
+
+.rm-text {
+    margin-left: 2.8rem;
+    font-size: 1.7rem;
+}
+
+.box:hover {
+    color: var(--bg-red);
+}
+
+.box-btn:hover {
+    background-color: var(--bg-red);
+    color: var(--bg-white);
+    padding-left: 1rem;
+    transition: padding 0.2s ease-in-out;
+}
+
+/* .......................... Donate  .......................... */
+
+.dr-wrap {
+    height: 110vh;
+}
+
+.donate,
+.recieve {
+    position: relative;
+    width: 60rem;
+    height: 63rem;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    padding: 4rem;
+    border: 0.05px solid var(--olive);
+}
+
+.donate {
+    float: left;
+    background-color: var(--bg-green);
+    box-shadow: 0px 0px 10px -3px var(--olive);
+}
+
+.recieve {
+    float: right;
+    box-shadow: 0px 0px 10px -5px;
+}
+
+.donate-head,
+.recieve-head {
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.donate img,
+.recieve img {
+    width: 100%;
+}
+
+.dr-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.donate-btn,
+.recieve-btn {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 4rem;
+    padding: 1.2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    outline: hidden;
+    cursor: pointer;
+    border: 3px solid var(--dark-green);
+    background-color: var(--dark-green);
+    color: var(--bg-white);
+    border-radius: 0.3rem;
+    box-shadow: 0px 0px 10px 0px var(--olive);
+}
+
+.donate-btn:hover,
+.recieve-btn:hover {
+    background-color: var(--bg-green);
+    color: var(--text-gray);
+}
+
+/* .......................... Footer  .......................... */
+.footer-modern {
+    background-color: #ffffff;
+    /* White background */
+    color: #495057;
+    /* Dark grey text */
+    padding: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid #e0e0e0;
+    /* Light grey top border */
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-column h3 {
+    color: #343a40;
+    /* Darker grey heading */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ced4da;
+    /* Light grey border */
+    padding-bottom: 8px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links li a {
+    color: #6c757d;
+    /* Medium grey links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    display: block;
+    padding: 5px 0;
+}
+
+.footer-links li a:hover {
+    color: #007bff;
+    /* Blue hover */
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    opacity: 1;
+}
+
+.donate-button {
+    background-color: #dc3545;
+    /* Red donate button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.donate-button:hover {
+    background-color: #c82333;
+    /* Darker red hover */
+}
+
+.footer-bottom {
+    background-color: #f8f9fa;
+    /* Very light grey bottom bar */
+    padding: 20px 0;
+    text-align: center;
+    color: #868e96;
+    font-size: 0.9rem;
+    border-top: 1px solid #e0e0e0;
+    /* Light grey top border for bottom bar */
+}
+
+.copyright-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-columns {
+        grid-template-columns: 1fr;
+        /* Stack columns on smaller screens */
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .footer-column:last-child {
+        margin-bottom: 0;
+    }
+}
